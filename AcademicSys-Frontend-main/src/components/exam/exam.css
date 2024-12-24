@@ -1,0 +1,60 @@
+/* table css */
+.el-table {
+  line-height: 30px;
+  width: 90%;
+  position: absolute;
+  left: 5%;
+  top: 3%;
+  font-size: medium;
+}
+
+/* cancel bottom line */
+.el-table::before {
+	height: 0px;
+}
+
+::v-deep .el-table td {
+  border-bottom: 0.5px solid black;
+}
+
+::v-deep .el-table th.is-leaf {
+  border-bottom: 1px solid black;
+}
+
+
+/* border for selectbox, checkbox and button */
+::v-deep .el-input__inner {
+  border: 1px solid black;
+}
+
+::v-deep .el-button--default {
+  border: 1px solid black;
+}
+
+::v-deep .el-checkbox__inner {
+  border: 1px solid black;
+}
+
+/* the basic container */
+.bg-container {
+  margin: 50px 50px;
+  border-radius: 50px; /* 设置圆角 */
+  box-shadow: 5px 5px 12px 3px rgba(0, 0, 0, 0.1); /* 设置阴影 */
+  /* background-color: #fff; */
+  backdrop-filter: blur(20px);
+  margin: auto;
+  overflow: hidden;
+  text-align: center;
+  border: 1px solid black
+}
+
+/* button css */
+.el-button {
+  height: 40px;
+  transition: background 0.3s ease-in-out, color 0.3s ease-in-out;
+}
+
+.el-button:hover {
+  background: black !important;
+  color: white !important;
+}
